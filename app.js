@@ -17,6 +17,7 @@ const options = {
 
 app.get('/', (req, res) => res.send('Hello World!'))
 app.post('/push', (req, res) => {
+    console.log(req.body, 'this is req.body')
     const subscription = {
         "endpoint": req.body.endpoint,
         "keys": req.body.keys
