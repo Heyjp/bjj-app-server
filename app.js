@@ -12,7 +12,7 @@ const payload = "Payloadddddd"
 
 const options = {
     vapidDetails: {
-        subject: 'test@test.com',
+        subject: 'https://jplayer.co.uk',
         publicKey: process.env.VAPID_PUB,
         privateKey: process.env.VAPID_PRIV
     },
