@@ -4,10 +4,6 @@ const express = require('express')
 const app = express()
 const PORT = 3000
 
-app.get('/', (req, res) => res.send('Hello World!'))
-
-const pub = proces.env.pub
-
 const payload = "Payloadddddd"
 
 const options = {
@@ -19,6 +15,7 @@ const options = {
     TTL: 60
 }
 
+app.get('/', (req, res) => res.send('Hello World!'))
 app.post('/push', (req, res) => {
     const subscription = {
         "endpoint": req.body.endpoint,
